@@ -38,6 +38,10 @@ export class EnglishTextService {
     logoDesignText: `Logo Design <br> Our in-house logo designer will create a custom logo tailored to your brand.`,
     websiteText: `Website <br> We offer multiple-page website development.`,
     brandingText: `Branding <br> Our branding services encompass brand identity guides, logo design, and custom illustrations for marketing purposes.`,
+    motionGraphicsVideos:`Motion Graphics Videos <br> Engage and impress your audience with dynamic motion graphics videos to impress your clients`,
+    ContentCreator:`Content Creation <br> Our content creator will create all the content you need to boost your project`,
+    marketingCampaigns:`Marketing Campaigns and consultations <br> Boost your business with impactful marketing campaigns and expert consultations. `,
+
     servicesNote: `Please note that specific pricing details for each project type can be provided upon consultation and understanding the scope of work involved.`,
     hireUsText: `HIRE US AS YOUR TEAM`,
     readyToTalkToUs: `Talk to us to learn more about how hiring us as your team works!`
