@@ -1,0 +1,51 @@
+.header-container{
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  z-index: 10;
+  position: fixed;
+}
+
+.header-container-scrolled{
+  margin-top: 0px;
+}
+
+.header-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  border-radius: 50px;
+  height: 80px;
+  background-color: #fff;
+}
+
+.header-content-scrolled{
+  width: 100%;
+  border-radius: 0px;
+  background-color: #ffffffed;
+}
+
+.header-items{
+  width: 45%;
+  justify-content: space-around;
+  display: flex;
+  margin-right: 40px;
+  max-width: 400px;
+}
+
+.divox-logo-container{
+  width: 25%;
+  margin-left: 60px;
+}
+
+.header-item{
+  cursor: pointer;
+}
+
+.divox-logo{
+  width: 150px;
+}
+

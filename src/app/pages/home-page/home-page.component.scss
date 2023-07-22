@@ -1,0 +1,25 @@
+.home-page-container{
+  background-color: #03013f;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  padding: 200px 5% 0px 6%;
+}
+
+
+.divox-slogan{
+  color: #fff;
+  font-size: 58px;
+  white-space: pre-line;
+}
+
+.fox-image{
+  position: absolute;
+  width: 430px;
+  right: -110px;
+  top: -20px;
+  z-index: 0;
+}

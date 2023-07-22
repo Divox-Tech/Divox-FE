@@ -1,5 +1,6 @@
+import {Injectable} from "@angular/core";
 
-
+@Injectable({ providedIn: 'root' })
 export class EnglishTextService {
   constructor() {
   }
@@ -22,7 +23,7 @@ export class EnglishTextService {
     experienceTheDivoxDifferenceText: `Choose Divox as your trusted partner for all your digital needs. Let us help you navigate the complexities of the online realm while providing you with unparalleled support and expertise. Join hands with us, and together, we'll create digital experiences that captivate, inspire, and drive your business forward.`
   }
 
-  divoxSlogan = `From Tech Wizardry to Marketing Mastery: Divox Does It All!`;
+  divoxSlogan = `From Tech Wizardry \n to Marketing Mastery`;
 
   whatIsDivox = `We're not just another tech company. At Divox, we believe in the power of simplicity and elegant design to revolutionize how technology solves problems. Our mission is to challenge norms, reimagine possibilities, and make complex ideas accessible and user-friendly. From full-stack web apps to captivating branding, we infuse creativity into every solution we create. Join us on this transformative journey of innovation and let Divox be your creative partner.`;
 
