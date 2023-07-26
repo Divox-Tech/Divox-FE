@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {EnglishTextService} from "../../text-services/english-text.service";
+import {EnglishTextService} from "../../../text-services/english-text.service";
 
 @Component({
   selector: 'home-page',
@@ -16,3 +16,4 @@ export class HomePageComponent implements OnInit{
   }
 
 }
+

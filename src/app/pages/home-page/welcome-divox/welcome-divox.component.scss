@@ -1,12 +1,10 @@
-.home-page-container{
-  background-color: #03013f;
-  background-size: cover;
-  background-repeat: no-repeat;
+.welcome-container{
+  background-color: #43417E;
   height: 100%;
   width: 100%;
   position: absolute;
   top: 0;
-  padding: 200px 5% 0px 6%;
+  padding: 200px 0 0 0;
 }
 
 
@@ -14,12 +12,15 @@
   color: #fff;
   font-size: 58px;
   white-space: pre-line;
+  padding-left: 6%;
 }
 
 .fox-image{
   position: absolute;
   width: 430px;
-  right: -110px;
+  right: 0;
   top: -20px;
   z-index: 0;
+  object-fit: cover;
+  object-position: 233px 10px;
 }
