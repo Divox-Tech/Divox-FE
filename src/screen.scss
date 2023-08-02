@@ -1,0 +1,13 @@
+@mixin screen($type, $value) {
+  @if $type == 'max' {
+    @media (max-width: $value) {
+      @content;
+    }
+  } @else if $type == 'min' {
+    @media (min-width: $value) {
+      @content;
+    }
+  } @else {
+    @error "Invalid media type: #{$type}. Use 'min' or 'max'.";
+  }
+}

@@ -34,7 +34,7 @@ export class EnglishTextService {
   servicesDescription = `Our pricing structure is project-based, requiring an initial deposit to commence the work. Payments are then made upon the completion of each milestone. Here are the various services:`;
 
   servicesText = {
-    webAppText: `WebSite and Application`,
+    webAppText: `WebSite and Application `,
     webAppDescription: `We offer full-stack Web App, Application development using Angular, Flutter, and Node.js.`,
     landingPageText: `Landing Page <br> We provide design and development services for captivating landing pages.`,
     logoDesignText: `Logo Design <br> Our in-house logo designer will create a custom logo tailored to your brand.`,

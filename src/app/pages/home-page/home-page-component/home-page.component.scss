@@ -1,3 +1,4 @@
+@import '/src/screen.scss';
 $main-text-color: #331B3B;
 
 .home-page-container{
@@ -22,7 +23,6 @@ $main-text-color: #331B3B;
 .light-weight{
   font-weight: 400;
 }
-
 .background-image{
   position: absolute;
   right: 0;
@@ -48,6 +48,8 @@ $main-text-color: #331B3B;
   font-size: 17px;
   line-height: 28px;
   margin-top: 25px;
+  max-width: 460px;
+
 }
 
 mark{
@@ -76,16 +78,16 @@ mark{
 }
 
 .card-row{
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
   margin-top: 40px;
+  padding: 0 3%;
 }
 
 .card{
   display: flex;
   flex-direction: column;
-  width: 308px;
   height: 160px;
   flex-shrink: 0;
   border-radius: 10px;
@@ -132,4 +134,54 @@ mark{
   font-size: 15px;
   color: $main-text-color;
   margin-top: 8px;
+}
+@media screen and (max-width:   1300px) {
+  .welcome-container{
+    height: 450px;
+  }
+
+}
+@media screen and (max-width:   1100px) {
+  .welcome-container{
+    height: 380px;
+  }
+
+}
+@media screen and (max-width:   1000px) {
+  //.background-image {
+  //  width: 35%;
+  //}
+  //.main-illustration{
+  //  width: 35%;
+  //}
+  .main-text{
+    width: 45%;
+  }
+  .divox-slogan{
+    font-size: 35px;
+  }
+  .welcome-container{
+      height: fit-content;
+  }
+  .what-is-divox{
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .divox-slogan{
+    font-size: 30px;
+  }
+  .what-is-divox{
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .card-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 500px) {
+  .card-row {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
