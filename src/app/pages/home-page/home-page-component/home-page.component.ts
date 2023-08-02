@@ -12,8 +12,11 @@ export class HomePageComponent implements OnInit{
     public englishTextService: EnglishTextService
   ) {}
 
+  userEmail: any = "";
+
   ngOnInit(){
   }
+
 
 }
 
