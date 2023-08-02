@@ -25,7 +25,7 @@ export class EnglishTextService {
 
   divoxSlogan = `From Tech Wizardry \n to Marketing Mastery`;
 
-  whatIsDivox = `We're not just another tech company. At Divox, we believe in the power of simplicity and elegant design to revolutionize how technology solves problems. Our mission is to challenge norms, reimagine possibilities, and make complex ideas accessible and user-friendly. From full-stack web apps to captivating branding, we infuse creativity into every solution we create. Join us on this transformative journey of innovation and let Divox be your creative partner.`;
+  whatIsDivox = `A comprehensive design, marketing, and development agency. We blend creativity and strategy to build brands, engage audiences, and create seamless digital experiences that leave a lasting impact.`;
 
   whyDivox = `Divox: Where Tech Solutions Get a Splash of Innovation! Our secret ingredient? Simplicity and swanky design that wows users. Our team of tech wizards and Designers will whisk you through the entire process, making sure you're part of the magic. Say goodbye to boring and hello to Divox, where your business gets a turbo boost into the future!`;
 
@@ -34,7 +34,8 @@ export class EnglishTextService {
   servicesDescription = `Our pricing structure is project-based, requiring an initial deposit to commence the work. Payments are then made upon the completion of each milestone. Here are the various services:`;
 
   servicesText = {
-    webAppText: `Web App <br> We offer full-stack web app development using Node.js and Angular.`,
+    webAppText: `WebSite and Application`,
+    webAppDescription: `We offer full-stack Web App, Application development using Angular, Flutter, and Node.js.`,
     landingPageText: `Landing Page <br> We provide design and development services for captivating landing pages.`,
     logoDesignText: `Logo Design <br> Our in-house logo designer will create a custom logo tailored to your brand.`,
     websiteText: `Website <br> We offer multiple-page website development.`,

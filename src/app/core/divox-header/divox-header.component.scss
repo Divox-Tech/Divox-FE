@@ -3,33 +3,35 @@
   height: 80px;
   display: flex;
   justify-content: center;
-  margin-top: 30px;
+  margin-top: 0px;
   z-index: 10;
   position: fixed;
-}
-
-.header-container-scrolled{
-  margin-top: 0px;
 }
 
 .header-content{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
-  border-radius: 50px;
   height: 80px;
-  background-color: #fff;
-}
-
-.header-content-scrolled{
   width: 100%;
   border-radius: 0px;
   background-color: #ffffffed;
+  box-shadow: 0 0px 4px rgba(0, 0, 0, 0.2);
+}
+
+.left-header-section{
+  display: flex;
+  width: 50%;
+  align-items: center;
+  margin-left: 3%;
+}
+
+.right-header-section{
+  margin-right: 3%;
 }
 
 .header-items{
-  width: 45%;
+  width: 280px;
   justify-content: space-around;
   display: flex;
   margin-right: 40px;
@@ -37,15 +39,77 @@
 }
 
 .divox-logo-container{
-  width: 25%;
-  margin-left: 60px;
+  width: 180px;
 }
 
 .header-item{
   cursor: pointer;
+  color: #331B3B;
 }
 
 .divox-logo{
   width: 150px;
 }
 
+
+
+button {
+  --primary-color: #804fa7;
+  --secondary-color: #fff;
+  --hover-color: #c158ab;
+  --arrow-width: 10px;
+  --arrow-stroke: 2px;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 20px;
+  color: var(--secondary-color);
+  padding: 1em 1.8em;
+  background: var(--primary-color);
+  display: flex;
+  transition: 0.2s background;
+  align-items: center;
+  gap: 0.6em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button .arrow-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button .arrow {
+  margin-top: 1px;
+  width: var(--arrow-width);
+  background: var(--primary-color);
+  height: var(--arrow-stroke);
+  position: relative;
+  transition: 0.2s;
+}
+
+button .arrow::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  border: solid var(--secondary-color);
+  border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+  display: inline-block;
+  top: -3px;
+  right: 3px;
+  transition: 0.2s;
+  padding: 3px;
+  transform: rotate(-45deg);
+}
+
+button:hover {
+  background-color: var(--hover-color);
+}
+
+button:hover .arrow {
+  background: var(--secondary-color);
+}
+
+button:hover .arrow:before {
+  right: 0;
+}

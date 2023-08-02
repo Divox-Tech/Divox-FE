@@ -1,26 +1,78 @@
 <div class="home-page-container">
 
   <div class="welcome-container">
-    <img src="./assets/fox-logo.svg" class="fox-image">
-    <h1 class="divox-slogan">{{englishTextService.divoxSlogan}}</h1>
-<!--    <img src="./assets/mockup-image.svg" class="mockup-img">-->
+    <img src="/assets/background-color.svg" class="background-image">
+    <img src="./assets/main-image.svg" class="main-illustration">
+
+    <div class="main-text">
+      <h1 class="divox-slogan">From Tech Wizardry</h1>
+      <h1 class="divox-slogan light-weight"><mark>to Marketing Mastery</mark></h1>
+      <h3 class="what-is-divox">{{englishTextService.whatIsDivox}}</h3>
+    </div>
+
+    <p class="divox-slogan"></p>
   </div>
 
-
-  <div class="what-is-divox">
-
-    <div class="square">
-      <img src="./assets/mouse-icon.svg" alt="" class="mouse-icon">
+  <div class="services-container">
+    <div class="services-text">
+      <h1 class="services-main-txt">What We Do</h1>
+      <h1 class="services-main-txt light-weight">For Your Business</h1>
     </div>
 
-    <div class="content">
-      <div class="section-text">
-        <h2 class="header-text">What is Divox?</h2>
-        <p class="header-answer">{{englishTextService.whatIsDivox}}</p>
+    <div class="card-row">
+      <div class="card">
+        <div class="illustration-container orange">
+          <img src="./assets/site-design.svg" alt="" class="services-illustration">
+        </div>
+        <div class="card-title">{{englishTextService.servicesText.webAppText}}</div>
+        <div class="card-description">{{englishTextService.servicesText.webAppDescription}}</div>
       </div>
 
-      <img class="" src="./assets/thinking.png" alt="" />
+      <div class="card">
+        <div class="illustration-container yellow">
+          <img src="./assets/web-dev.svg" alt="" class="services-illustration">
+        </div>
+        <div class="card-title">{{englishTextService.servicesText.webAppText}}</div>
+        <div class="card-description">{{englishTextService.servicesText.webAppDescription}}</div>
+      </div>
+
+      <div class="card">
+        <div class="illustration-container baby-blue">
+          <img src="./assets/logo-design.png" alt="" class="services-illustration">
+        </div>
+        <div class="card-title">{{englishTextService.servicesText.webAppText}}</div>
+        <div class="card-description">{{englishTextService.servicesText.webAppDescription}}</div>
+      </div>
+
     </div>
+
+    <div class="card-row">
+      <div class="card">
+        <div class="illustration-container baby-blue">
+          <img src="./assets/motion-graphic.png" alt="" class="services-illustration">
+        </div>
+        <div class="card-title">{{englishTextService.servicesText.webAppText}}</div>
+        <div class="card-description">{{englishTextService.servicesText.webAppDescription}}</div>
+      </div>
+
+      <div class="card">
+        <div class="illustration-container orange">
+          <img src="./assets/content-creator.png" alt="" class="services-illustration">
+        </div>
+        <div class="card-title">{{englishTextService.servicesText.webAppText}}</div>
+        <div class="card-description">{{englishTextService.servicesText.webAppDescription}}</div>
+      </div>
+
+      <div class="card">
+        <div class="illustration-container yellow">
+          <img src="./assets/marketing-campaign.png" alt="" class="services-illustration">
+        </div>
+        <div class="card-title">{{englishTextService.servicesText.webAppText}}</div>
+        <div class="card-description">{{englishTextService.servicesText.webAppDescription}}</div>
+      </div>
+
+    </div>
+
 
   </div>
 

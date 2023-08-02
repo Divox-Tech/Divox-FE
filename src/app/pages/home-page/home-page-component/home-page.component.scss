@@ -1,3 +1,4 @@
+$main-text-color: #331B3B;
 
 .home-page-container{
     width: 100vw;
@@ -5,7 +6,6 @@
 }
 
 .welcome-container{
-  background-color: #43417E;
   height: 589px;
   width: 100%;
   padding: 200px 0 0 0;
@@ -13,76 +13,123 @@
 
 
 .divox-slogan{
-  color: #fff;
-  font-size: 58px;
+  color: $main-text-color;
+  font-size: 49px;
   white-space: pre-line;
-  padding-left: 6%;
+  font-weight: bold;
 }
 
-.fox-image{
+.light-weight{
+  font-weight: 400;
+}
+
+.background-image{
   position: absolute;
-  width: 430px;
   right: 0;
-  top: -20px;
+  top: 80px;
   z-index: 0;
-  object-fit: cover;
-  object-position: 233px 10px;
+  width: 45%;
 }
 
-.mockup-img{
-  width: 100%;
-  top: 450px;
+.main-illustration{
   position: absolute;
-}
-
-.color-section{
-  background-color: #F3F1F5;
-  width: 100%;
-  height: 250px;
-}
-
-.what-is-divox{
-  width: 100%;
-  background-color: #FAFAFA;
-  padding-bottom: 100px;
-}
-
-.square{
-  width: 70px;
-  height: 79px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: baseline;
-  position: relative;
-  bottom: 29px;
-  background-color: #FAFAFA;
-  left: 50%;
-  padding-top: 15px;
-}
-
-.content{
-  padding: 50px 5% 0 5%;
-  display: flex;
-  align-items: center;
-}
-
-.section-text{
+  right: 0;
+  top: 110px;
   width: 50%;
 }
 
-.header-text{
-  font-size: 40px;
-  font-weight: bold;
-  line-height: 48px;
-  color: #43417E;
+.main-text{
+  width: 47%;
+  padding-left: 3%;
 }
 
-.header-answer{
-  font-size: 24px;
-  font-weight: 500;
-  line-height: 32px;
-  margin-top: 20px;
-  color: #484848;
-  text-align: justify;
+.what-is-divox{
+  color: $main-text-color;
+  font-size: 17px;
+  line-height: 28px;
+  margin-top: 25px;
+}
+
+mark{
+  color: $main-text-color;
+  background-color: #ffbc068c;
+}
+
+.services-container{
+  background-image: url("/assets/left-right-pink-curve.svg");
+  margin-top: 100px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 90px 0px;
+}
+
+.services-text{
+  margin-bottom: 50px;
+}
+
+.services-main-txt{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  color: $main-text-color;
+}
+
+.card-row{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 40px;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  width: 308px;
+  height: 160px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #FFF;
+  box-shadow: 0px 0px 9px 2px rgba(0, 0, 0, 0.05);
+  padding: 19px;
+}
+
+.illustration-container{
+  width: 52px;
+  height: 48px;
+  background-color: #331B3B;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.services-illustration{
+  width: 34px;
+  height: 34px;
+}
+
+.orange{
+  background-color: #FFDED4;
+}
+
+.yellow{
+  background-color: #FFEED4;
+}
+
+.baby-blue{
+  background-color: #D4F0FF;
+}
+
+.card-title{
+  font-size: 16px;
+  color: $main-text-color;
+  font-weight: bold;
+  margin-top: 13px;
+}
+
+.card-description{
+  font-size: 15px;
+  color: $main-text-color;
+  margin-top: 8px;
 }

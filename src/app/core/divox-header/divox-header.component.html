@@ -1,15 +1,27 @@
-<div class="header-container" [ngClass]="{ 'header-container-scrolled': isScrolled }">
-  <div class="header-content" [ngClass]="{ 'header-content-scrolled': isScrolled }">
+<div class="header-container">
+  <div class="header-content">
 
-    <div class="divox-logo-container">
-      <img src="./assets/divox-logo.svg" alt="" class="divox-logo" />
+    <div class="left-header-section">
+      <div class="divox-logo-container">
+        <img src="./assets/divox-logo.svg" alt="" class="divox-logo" />
+      </div>
+
+      <div class="header-items">
+        <a class="header-item">Home</a>
+        <a class="header-item">Services</a>
+        <a class="header-item">Projects</a>
+      </div>
     </div>
 
-    <div class="header-items">
-      <a class="header-item">Home</a>
-      <a class="header-item">Services</a>
-      <a class="header-item">Projects</a>
-      <a class="header-item">Contact</a>
+    <div class="right-header-section">
+      <button>
+        Contact Us
+        <div class="arrow-wrapper">
+          <div class="arrow"></div>
+
+        </div>
+      </button>
+
     </div>
 
   </div>
