@@ -39,7 +39,7 @@ $main-text-color: #331B3B;
 }
 
 .main-text{
-  width: 47%;
+  width: 37%;
   padding-left: 3%;
 }
 
@@ -88,7 +88,7 @@ mark{
 .card{
   display: flex;
   flex-direction: column;
-  height: 160px;
+  height: 200px;
   flex-shrink: 0;
   border-radius: 10px;
   background: #FFF;
@@ -127,13 +127,118 @@ mark{
   font-size: 16px;
   color: $main-text-color;
   font-weight: bold;
-  margin-top: 13px;
+  margin-top: 20px;
+  line-height: 24px;
 }
 
 .card-description{
   font-size: 15px;
   color: $main-text-color;
   margin-top: 8px;
+  line-height: 19px;
+}
+
+
+
+button {
+  --primary-color: #804fa7;
+  --secondary-color: #fff;
+  --hover-color: #c158ab;
+  --arrow-width: 10px;
+  --arrow-stroke: 2px;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 20px;
+  color: var(--secondary-color);
+  padding: 1em 1.8em;
+  background: var(--primary-color);
+  display: flex;
+  transition: 0.2s background;
+  align-items: center;
+  gap: 0.6em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button .arrow-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button .arrow {
+  margin-top: 1px;
+  width: var(--arrow-width);
+  background: var(--primary-color);
+  height: var(--arrow-stroke);
+  position: relative;
+  transition: 0.2s;
+}
+
+button .arrow::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  border: solid var(--secondary-color);
+  border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+  display: inline-block;
+  top: -3px;
+  right: 3px;
+  transition: 0.2s;
+  padding: 3px;
+  transform: rotate(-45deg);
+}
+
+button:hover {
+  background-color: var(--hover-color);
+}
+
+button:hover .arrow {
+  background: var(--secondary-color);
+}
+
+button:hover .arrow:before {
+  right: 0;
+}
+
+.contact-us-button{
+  height: 50px;
+}
+
+.email-form{
+  display: flex;
+  margin-top: 30px;
+  margin-left: 3%;
+  max-width: 490px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.InputContainer {
+  width: 350px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom,rgb(227, 213, 255),rgb(255, 231, 231));
+  border-radius: 30px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.075);
+}
+
+.input {
+  width: 320px;
+  height: 40px;
+  border: none;
+  outline: none;
+  caret-color: rgb(255, 81, 0);
+  background-color: rgb(255, 255, 255);
+  border-radius: 30px;
+  padding-left: 15px;
+  letter-spacing: 0.8px;
+  color: rgb(19, 19, 19);
+  font-size: 13.4px;
 }
 @media screen and (max-width:   1300px) {
   .welcome-container{

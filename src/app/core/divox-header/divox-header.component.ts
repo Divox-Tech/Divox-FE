@@ -7,11 +7,4 @@ import {Component, HostListener} from '@angular/core';
 })
 export class DivoxHeaderComponent {
 
-  isScrolled = false;
-
-  @HostListener('window:scroll', ['$event'])
-  onWindowScroll() {
-    this.isScrolled = window.scrollY >= 60;
-  }
-
 }

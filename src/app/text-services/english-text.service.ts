@@ -34,15 +34,20 @@ export class EnglishTextService {
   servicesDescription = `Our pricing structure is project-based, requiring an initial deposit to commence the work. Payments are then made upon the completion of each milestone. Here are the various services:`;
 
   servicesText = {
-    webAppText: `WebSite and Application `,
-    webAppDescription: `We offer full-stack Web App, Application development using Angular, Flutter, and Node.js.`,
+    webAppText: `WebSite and Application design & development`,
+    webAppDescription: `we deliver exceptional website and mobile app development with innovative design for engaging audiences and meeting business needs`,
     landingPageText: `Landing Page <br> We provide design and development services for captivating landing pages.`,
-    logoDesignText: `Logo Design <br> Our in-house logo designer will create a custom logo tailored to your brand.`,
+    logoDesignText: `Logo Design`,
+    logoDesignDescription: `Our in-house logo designer will create a custom logo tailored to your brand.`,
     websiteText: `Website <br> We offer multiple-page website development.`,
-    brandingText: `Branding <br> Our branding services encompass brand identity guides, logo design, and custom illustrations for marketing purposes.`,
-    motionGraphicsVideos:`Motion Graphics Videos <br> Engage and impress your audience with dynamic motion graphics videos to impress your clients`,
-    ContentCreator:`Content Creation <br> Our content creator will create all the content you need to boost your project`,
-    marketingCampaigns:`Marketing Campaigns and consultations <br> Boost your business with impactful marketing campaigns and expert consultations. `,
+    brandingText: `Branding`,
+    brandingDescription: `Our branding services encompass brand identity guides, logo design, and custom illustrations for marketing purposes.`,
+    motionGraphicsVideos:`Motion Graphics Videos`,
+    motionGraphicsVideosDescription:`Engage and impress your audience with dynamic motion graphics videos to impress your clients`,
+    ContentCreator:`Content Creation`,
+    ContentCreatorDescription:`Our content creator will create all the content you need to boost your project`,
+    marketingCampaigns:`Marketing Campaigns and consultations`,
+    marketingCampaignsDescription:`Boost your business with impactful marketing campaigns and expert consultations. `,
 
     servicesNote: `Please note that specific pricing details for each project type can be provided upon consultation and understanding the scope of work involved.`,
     hireUsText: `HIRE US AS YOUR TEAM`,

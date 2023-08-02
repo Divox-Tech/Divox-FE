@@ -6,14 +6,13 @@ import { AppComponent } from './app.component';
 import {CoreModule} from "./core/core.module";
 import { LottieModule } from 'ngx-lottie';
 
-import {EnglishTextService} from "./text-services/english-text.service";
 export function playerFactory() {
   return import('lottie-web');
 }
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
