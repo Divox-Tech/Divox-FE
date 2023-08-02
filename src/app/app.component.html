@@ -1,8 +1,8 @@
 <divox-header *ngIf="!isLoading"></divox-header>
 <router-outlet *ngIf="!isLoading"></router-outlet>
 
-<div class="main-container">
-  <div class="lottie-container" *ngIf="isLoading">
+<div class="main-container" *ngIf="isLoading">
+  <div class="lottie-container">
     <ng-lottie
       [options]="lottieOptions"
       [width]="'300'"
