@@ -1,4 +1,4 @@
-import {Injectable, NgModule} from '@angular/core';
+import { NgModule} from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import {DivoxHeaderComponent} from "./divox-header/divox-header.component";
 import {ContactUsButtonComponent} from "./conatct-us-button/contact-us-button.component";
@@ -6,7 +6,7 @@ import {ContactUsButtonComponent} from "./conatct-us-button/contact-us-button.co
 @NgModule({
   declarations: [
     DivoxHeaderComponent,
-    ContactUsButtonComponent
+    ContactUsButtonComponent,
   ],
   imports: [
     BrowserModule,
@@ -14,8 +14,6 @@ import {ContactUsButtonComponent} from "./conatct-us-button/contact-us-button.co
   providers: [],
   exports: [
     DivoxHeaderComponent,
-    ContactUsButtonComponent
   ],
-  bootstrap: []
 })
 export class CoreModule { }

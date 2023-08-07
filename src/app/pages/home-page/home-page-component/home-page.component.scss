@@ -58,12 +58,13 @@ mark{
 }
 
 .services-container{
-  background-image: url("/assets/left-right-pink-curve.svg");
-  margin-top: 100px;
+  background-color: #EDE5F2;
+  margin-top: 10%;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 90px 0px;
+  padding: 90px 0;
+  border-radius: 20% 0 0 0;
 }
 
 .services-text{
@@ -92,7 +93,7 @@ mark{
   flex-shrink: 0;
   border-radius: 10px;
   background: #FFF;
-  box-shadow: 0px 0px 9px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 9px 2px rgba(0, 0, 0, 0.05);
   padding: 19px;
 }
 
@@ -289,4 +290,59 @@ button:hover .arrow:before {
   .card-row {
     grid-template-columns: repeat(1, 1fr);
   }
+}
+
+.dotted-circle{
+  position: absolute;
+  object-fit: cover;
+  object-position: 120px -260px;
+  right: 0;
+}
+
+.why-divox-container{
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.why-divox-text{
+  width: 39%;
+}
+
+.why-divox-head-txt{
+  font-size: 48px;
+  line-height: 105px;
+  color: $main-text-color;
+  font-weight: bold;
+}
+
+.why-image-container{
+  width: 55%;
+}
+
+.why-divox-img{
+  width: 100%;
+  height: 100%;
+}
+
+.why-divox-description{
+  font-size: 17px;
+  line-height: 24px;
+  color: $main-text-color;
+  opacity: 90%;
+  text-align: justify;
+}
+
+.team-container{
+  background-color: #F8E6F3;
+  margin-top: 10%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 90px 0;
+  border-radius: 20% 0 0 0;
+}
+
+.team-card{
+  height: 150px;
 }

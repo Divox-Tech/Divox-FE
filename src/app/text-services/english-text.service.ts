@@ -27,7 +27,7 @@ export class EnglishTextService {
 
   whatIsDivox = `A comprehensive design, marketing, and development agency. We blend creativity and strategy to build brands, engage audiences, and create seamless digital experiences that leave a lasting impact.`;
 
-  whyDivox = `Divox: Where Tech Solutions Get a Splash of Innovation! Our secret ingredient? Simplicity and swanky design that wows users. Our team of tech wizards and Designers will whisk you through the entire process, making sure you're part of the magic. Say goodbye to boring and hello to Divox, where your business gets a turbo boost into the future!`;
+  whyDivox = `Where Tech Solutions Get a Splash of Innovation! Our secret ingredient? Simplicity and swanky design that wows users. Our team of tech wizards and Designers will whisk you through the entire process, making sure you're part of the magic. Say goodbye to boring and hello to Divox, where your business gets a turbo boost into the future!`;
 
   projectsCost = `Project Cost: Where Pricing Meets Value!`;
 
@@ -56,11 +56,16 @@ export class EnglishTextService {
 
   ourTeam = {
     ourTeamText: `Our Team`,
-    productDesignerText: `Product Designer <br> UX/UI design team with one senior designer`,
-    projectManagerText: `Project Manager <br> Dedicated project Manager`,
-    frontendText: `Front-end Engineer <br> Frontend team with one senior front-end engineer`,
-    graphicDesignerText: `Graphics Designer <br> Dedicated graphics designers for custom logo and illustrations`,
-    backendText: `Back-end Engineer <br> Backend team with one senior back-end engineer`,
+    productDesignerText: `Product Designer`,
+    productDesignerDescription: `UX/UI design team with one senior designer`,
+    projectManagerText: `Project Manager`,
+    projectManagerDescription: `Dedicated project Manager`,
+    frontendText: `Front-end Engineer`,
+    frontendDescription: `Frontend team with one senior front-end engineer`,
+    graphicDesignerText: `Graphics Designer`,
+    graphicDesignerDescription: `Dedicated graphics designers for custom logo and illustrations`,
+    backendText: `Back-end Engineer`,
+    backendDescription: `Backend team with one senior back-end engineer`,
   }
 
 }
