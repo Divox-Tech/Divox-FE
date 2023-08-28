@@ -12,7 +12,9 @@ $main-text-color: #331B3B;
   padding: 200px 0 0 0;
 }
 
-
+.circle{
+  visibility: hidden;
+}
 .divox-slogan{
   color: $main-text-color;
   font-size: 49px;
@@ -28,14 +30,14 @@ $main-text-color: #331B3B;
   right: 0;
   top: 80px;
   z-index: 0;
-  width: 45%;
+  width: 43%;
 }
 
 .main-illustration{
   position: absolute;
   right: 0;
   top: 110px;
-  width: 50%;
+  width: 45%;
 }
 
 .main-text{
@@ -246,19 +248,7 @@ button:hover .arrow:before {
   }
 
 }
-@media screen and (max-width:   1100px) {
-  .welcome-container{
-    height: 380px;
-  }
-
-}
-@media screen and (max-width:   1000px) {
-  //.background-image {
-  //  width: 35%;
-  //}
-  //.main-illustration{
-  //  width: 35%;
-  //}
+@media screen and (max-width:   1250px) {
   .main-text{
     width: 45%;
   }
@@ -266,23 +256,89 @@ button:hover .arrow:before {
     font-size: 35px;
   }
   .welcome-container{
-      height: fit-content;
+    height: 450px;
+    padding: 150px 0 0 0;
   }
   .what-is-divox{
     font-size: 16px;
   }
+  .main-illustration{
+    top: 60px;
+  }
+}
+@media screen and (max-width:   1100px) {
+  .welcome-container{
+    height: 400px;
+  }
+
+}
+
+
+@media screen and (max-width: 1000px) {
+  .welcome-container{
+    padding: 145px 0 0 0;
+    height: 330px;
+  }
+
 }
 @media screen and (max-width: 850px) {
   .divox-slogan{
     font-size: 30px;
+    color: white;
   }
   .what-is-divox{
     font-size: 14px;
+    color: white;
+  }
+
+  .welcome-container{
+    background-image: linear-gradient(to right top, #7E4DA7, #9150A9, #A352AA, #B455AB, #C459AB);
+    padding-bottom: 90px;
+    height: fit-content;
+  }
+  .background-image{
+    visibility: hidden;
+  }
+  .light-weight{
+      mark{
+        color: #ffffff;
+        background-color: transparent;
+      }
+  }
+  .main-illustration {
+    top: 80px;
+  }
+  .email-form{
+    display: none;
   }
 }
 @media screen and (max-width: 800px) {
   .card-row {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 750px) {
+  .main-illustration {
+    top: 95px;
+  }
+  .divox-slogan {
+    font-size: 20px;
+  }
+  .what-is-divox {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .main-text {
+    width: 100%;
+  }
+  .main-illustration{
+    visibility: hidden;
+  }
+  .circle{
+    visibility: visible;
+
   }
 }
 @media screen and (max-width: 500px) {
