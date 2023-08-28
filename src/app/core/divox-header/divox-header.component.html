@@ -7,14 +7,14 @@
       </div>
 
       <div class="header-items">
-        <a class="header-item">Home</a>
-        <a class="header-item">Services</a>
-        <a class="header-item">Projects</a>
+        <a class="header-item" (click)="setLinkClicked('home')">Home</a>
+        <a class="header-item" (click)="setLinkClicked('services')">Services</a>
+        <a class="header-item" (click)="setLinkClicked('team')">Our team</a>
       </div>
     </div>
 
     <div class="right-header-section">
-      <contact-us-btn></contact-us-btn>
+      <app-contact-us-btn></app-contact-us-btn>
     </div>
 
   </div>
