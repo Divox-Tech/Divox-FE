@@ -44,6 +44,8 @@ constructor() {
       elementToScrollTo = document.getElementById("ourTeam")
     }else if(viewName === "aboutUs"){
       elementToScrollTo = document.getElementById("aboutUs")
+    }else if(viewName === "contactUs"){
+      elementToScrollTo = document.getElementById("contact-us")
     }
 
     elementToScrollTo?.scrollIntoView({ behavior: "smooth" });

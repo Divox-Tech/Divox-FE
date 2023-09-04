@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, EventEmitter, Output} from '@angular/core';
 
 @Component({
   selector: 'app-contact-us-btn',
@@ -6,6 +6,13 @@ import {Component} from '@angular/core';
   styleUrls: ['./contact-us-button.component.scss'],
 })
 
+
 export class ContactUsButtonComponent {
+
+  @Output("onClick") onClick = new EventEmitter<any>();
+
+  buttonTrigger(){
+    this.onClick.emit();
+  }
 
 }
