@@ -1,5 +1,4 @@
 import {Component, HostListener} from '@angular/core';
-import {AppFacade} from "../../services/app.facade";
 
 @Component({
   selector: 'divox-header',
@@ -7,12 +6,18 @@ import {AppFacade} from "../../services/app.facade";
   styleUrls: ['./divox-header.component.scss']
 })
 export class DivoxHeaderComponent {
+  isMenuChanged = false;
+
   constructor(
-    private appFacade: AppFacade
   ) {}
 
   setLinkClicked(link: string){
     // this.appFacade.setLinkClicked(link);
+  }
+
+  menuOnClick(){
+    this.isMenuChanged = !this.isMenuChanged;
+
   }
 
 }

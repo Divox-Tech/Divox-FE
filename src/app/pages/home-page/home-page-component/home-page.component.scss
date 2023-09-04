@@ -313,40 +313,7 @@ button:hover .arrow:before {
     display: none;
   }
 }
-@media screen and (max-width: 800px) {
-  .card-row {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media screen and (max-width: 750px) {
-  .main-illustration {
-    top: 95px;
-  }
-  .divox-slogan {
-    font-size: 20px;
-  }
-  .what-is-divox {
-    font-size: 14px;
-    line-height: 24px;
-  }
-}
-@media screen and (max-width: 650px) {
-  .main-text {
-    width: 100%;
-  }
-  .main-illustration{
-    visibility: hidden;
-  }
-  .circle{
-    visibility: visible;
 
-  }
-}
-@media screen and (max-width: 500px) {
-  .card-row {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
 
 .dotted-circle{
   position: absolute;
@@ -401,4 +368,79 @@ button:hover .arrow:before {
 
 .team-card{
   height: 150px;
+}
+
+@media screen and (max-width: 900px) {
+  .dotted-circle{
+    width: 400px;
+    height: 420px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .why-divox-head-txt{
+    font-size: 38px;
+  }
+  .why-divox-description{
+    font-size: 16px;
+  }
+  .why-image-container{
+    width: 50%;
+  }
+  .why-divox-text{
+    width: 40%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .card-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .why-divox-head-txt{
+    font-size: 34px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .main-illustration {
+    top: 95px;
+  }
+  .divox-slogan {
+    font-size: 20px;
+  }
+  .what-is-divox {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .dotted-circle{
+    visibility: hidden;
+  }
+  .why-divox-text{
+    width: 45%;
+  }
+}
+@media screen and (max-width: 650px) {
+  .main-text {
+    width: 85%;
+  }
+  .main-illustration{
+    visibility: hidden;
+  }
+  .circle{
+    visibility: visible;
+
+  }
+  .dotted-circle{
+    visibility: hidden;
+  }
+  .why-image-container{
+    visibility: hidden;
+  width: 0%;
+  }
+  .why-divox-text{
+    width: 100%;
+    padding: 3%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .card-row {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }

@@ -17,6 +17,7 @@ export function playerFactory() {
   imports: [
     BrowserModule,
     AppRoutingModule,
+    CoreModule,
     LottieModule.forRoot({ player: playerFactory })
   ],
   providers: [],

@@ -15,6 +15,24 @@
 
     <div class="right-header-section">
       <app-contact-us-btn></app-contact-us-btn>
+
+      <div id="menu" >
+        <div id="menu-bar" [class.change]="isMenuChanged" (click)="menuOnClick()">
+          <div id="bar1" class="bar"></div>
+          <div id="bar2" class="bar"></div>
+          <div id="bar3" class="bar"></div>
+        </div>
+        <nav class="nav" id="nav" [class.change]="isMenuChanged">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="menu-bg" id="menu-bg" [class.change-bg]="isMenuChanged"></div>
     </div>
 
   </div>

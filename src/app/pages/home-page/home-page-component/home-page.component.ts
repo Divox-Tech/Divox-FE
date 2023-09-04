@@ -1,6 +1,5 @@
 import {Component, OnInit} from '@angular/core';
 import {EnglishTextService} from "../../../text-services/english-text.service";
-import {AppFacade} from "../../../services/app.facade";
 
 @Component({
   selector: 'home-page',
@@ -11,7 +10,6 @@ import {AppFacade} from "../../../services/app.facade";
 export class HomePageComponent implements OnInit{
   constructor(
     public englishTextService: EnglishTextService,
-    private appFacade: AppFacade
   ) {}
 
   userEmail: any = "";
