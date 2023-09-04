@@ -26,10 +26,11 @@
         </div>
         <nav class="nav" id="nav" [class.change]="isMenuChanged">
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Blog</a></li>
+            <li><a (click)="setLinkClicked('home')">Home</a></li>
+            <li><a (click)="setLinkClicked('services')">Services</a></li>
+            <li><a (click)="setLinkClicked('whyDivox')">Why Divox</a></li>
+            <li><a (click)="setLinkClicked('ourTeam')">Our team</a></li>
+            <li><a (click)="setLinkClicked('aboutUs')">About Us</a></li>
           </ul>
         </nav>
       </div>

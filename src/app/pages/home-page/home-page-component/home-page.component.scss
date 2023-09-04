@@ -379,11 +379,18 @@ button:hover .arrow:before {
 }
 
 .about-us-card-container{
-  display: flex;
-  justify-content: space-evenly;
-  margin-top: 30px;
-  width: 100%;
-  padding-bottom: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  padding: 0 3%;
+  @media screen and (max-width: 1300px) {
+    grid-template-columns: repeat(2, 1fr);
+
+  }
+  @media screen and (max-width: 750px) {
+    grid-template-columns: repeat(1, 1fr);
+
+  }
 }
 
 .about-us-img{
@@ -407,7 +414,6 @@ button:hover .arrow:before {
 }
 
 .about-us-card{
-  width: 23%;
   padding: 0 3%;
   height: 300px;
   background-color: #fff;
