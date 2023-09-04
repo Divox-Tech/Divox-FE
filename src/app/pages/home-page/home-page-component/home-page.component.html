@@ -13,11 +13,11 @@
     </div>
 
     <div class="email-form">
-      <div class="InputContainer">
-        <input placeholder="Type Your Email" id="input" class="input" name="userEmail" type="email" autocomplete="false">
-      </div>
+<!--      <div class="InputContainer">-->
+<!--        <input placeholder="Type Your Email" id="input" class="input" name="userEmail" type="email" autocomplete="false">-->
+<!--      </div>-->
 
-        <button class="contact-us-button">
+        <button class="contact-us-button" (click)="scrollToView()">
           Talk To Us
           <div class="arrow-wrapper">
             <div class="arrow"></div>
@@ -192,43 +192,37 @@
 
 <!--  Contact Us  -->
 
-  <div class="contact-us-container align-items-center">
+<div class="contact-us-container" id="contact-us">
+  <img src="/assets/contact-us.jpg" class="contact-us-img" alt=""/>
 
-    <!-- 	 SVG	 -->
-    <img src="assets/contact-us-image.svg" class="contact-us-img" alt=""/>
+  <div class="contact-us-form">
+    <div class="InputContainer">
+      <input placeholder="Full name" id="fullName" class="input" name="text" type="text" [(ngModel)]="userFullName">
+    </div>
 
-    <form>
-      <h1 class="title text-center mb-4">Talk to Us</h1>
+    <div class="InputContainer">
+      <input placeholder="Email" id="email" class="input" name="text" type="text" [(ngModel)]="userEmail">
+    </div>
 
-      <!-- Name -->
-      <div class="form-group position-relative">
-        <label for="formName" class="d-block">
-          <i class="icon" data-feather="user"></i>
-        </label>
-        <input type="text" id="formName" class="form-control form-control-lg thick" placeholder="Name">
+    <div class="InputContainer">
+      <input placeholder="Email" id="number" class="input" name="text" type="text" [(ngModel)]="phoneNumber">
+    </div>
+
+    <div class="InputContainer textarea-container">
+      <textarea placeholder="Your Message" id="textArea" class="input textarea-input" name="text" type="text" [(ngModel)]="userMessage"></textarea>
+    </div>
+
+
+    <button class="contact-us-button submit-btn" (click)="test()">
+      Send
+      <div class="arrow-wrapper">
+        <div class="arrow"></div>
+
       </div>
-
-      <!-- E-mail -->
-      <div class="form-group position-relative top-space">
-        <label for="formEmail" class="d-block">
-          <i class="icon" data-feather="mail"></i>
-        </label>
-        <input type="email" id="formEmail" class="form-control form-control-lg thick" placeholder="E-mail">
-      </div>
-
-      <!-- Message -->
-      <div class="form-group message top-space">
-        <textarea id="formMessage" class="form-control form-control-lg text-area" rows="7" placeholder="Mensagem"></textarea>
-      </div>
-
-      <!-- Submit btn -->
-      <div class="text-center">
-        <button type="submit" class="btn btn-primary" tabIndex="-1">Send message</button>
-      </div>
-    </form>
+    </button>
 
   </div>
-
+</div>
 
 </div>
 

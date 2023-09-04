@@ -16,7 +16,7 @@
     </div>
 
     <div class="right-header-section">
-      <app-contact-us-btn></app-contact-us-btn>
+      <app-contact-us-btn (onClick)="setLinkClicked('contactUs')"></app-contact-us-btn>
 
       <div id="menu" >
         <div id="menu-bar" [class.change]="isMenuChanged" (click)="menuOnClick()">

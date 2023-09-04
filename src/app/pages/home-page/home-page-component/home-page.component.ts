@@ -14,13 +14,24 @@ export class HomePageComponent implements OnInit{
   ) {}
 
   userEmail: any = "";
+  userFullName: any = "";
+  userMessage: any = "";
+  phoneNumber: any = "";
 
   ngOnInit(){
-    // this.appFacade.getLinkClicked().subscribe((linkClicked) => {
-    //   console.log(linkClicked, " => linkClicked")
-    // })
   }
 
+  test(){
+    console.log(this.userEmail);
+    console.log(this.userFullName);
+    console.log(this.userMessage);
+    console.log(this.phoneNumber);
+  }
+
+  scrollToView(){
+    var elementToScrollTo = document.getElementById("contact-us")
+    elementToScrollTo?.scrollIntoView({ behavior: "smooth" });
+  }
 
 }
 
