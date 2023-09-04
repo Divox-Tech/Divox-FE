@@ -14,6 +14,7 @@ import {ContactUsButtonComponent} from "./conatct-us-button/contact-us-button.co
   providers: [],
   exports: [
     DivoxHeaderComponent,
+    ContactUsButtonComponent,
   ],
 })
 export class CoreModule { }

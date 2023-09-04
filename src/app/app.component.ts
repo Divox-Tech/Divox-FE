@@ -28,4 +28,25 @@ constructor() {
     }, 3000)
   }
 
+  scrollToView(viewName: string){
+    var elementToScrollTo;
+
+    if(viewName === "home"){
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth" // You can omit this for instant scrolling
+      });
+    }else if(viewName === "services"){
+      elementToScrollTo = document.getElementById("services")
+    }else if(viewName === "whyDivox"){
+      elementToScrollTo = document.getElementById("whyDivox")
+    }else if(viewName === "ourTeam"){
+      elementToScrollTo = document.getElementById("ourTeam")
+    }else if(viewName === "aboutUs"){
+      elementToScrollTo = document.getElementById("aboutUs")
+    }
+
+    elementToScrollTo?.scrollIntoView({ behavior: "smooth" });
+  }
+
 }

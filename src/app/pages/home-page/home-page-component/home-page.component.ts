@@ -11,7 +11,7 @@ import {AppFacade} from "../../../services/app.facade";
 export class HomePageComponent implements OnInit{
   constructor(
     public englishTextService: EnglishTextService,
-    private appFacade: AppFacade
+    // private appFacade: AppFacade
   ) {}
 
   userEmail: any = "";

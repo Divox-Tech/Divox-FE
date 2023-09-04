@@ -15,9 +15,12 @@ import {ContactUsButtonComponent} from "../../core/conatct-us-button/contact-us-
     FormsModule,
     ReactiveFormsModule,
     RouterOutlet,
-    ContactUsButtonComponent
+    CoreModule
   ],
   providers: [],
   bootstrap: [],
+  exports: [
+    HomePageComponent
+  ]
 })
 export class HomePageModule { }

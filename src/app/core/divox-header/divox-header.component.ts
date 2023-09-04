@@ -1,4 +1,4 @@
-import {Component, HostListener} from '@angular/core';
+import {Component, EventEmitter, HostListener, Output} from '@angular/core';
 import {AppFacade} from "../../services/app.facade";
 
 @Component({
@@ -8,11 +8,13 @@ import {AppFacade} from "../../services/app.facade";
 })
 export class DivoxHeaderComponent {
   constructor(
-    private appFacade: AppFacade
+    // private appFacade: AppFacade
   ) {}
 
+  @Output("linkClicked") linkClicked = new EventEmitter<string>();
+
   setLinkClicked(link: string){
-    // this.appFacade.setLinkClicked(link);
+    this.linkClicked.emit(link);
   }
 
 }

@@ -1,4 +1,5 @@
-<router-outlet *ngIf="!isLoading"></router-outlet>
+<divox-header *ngIf="!isLoading" (linkClicked)="scrollToView($event)"></divox-header>
+<home-page *ngIf="!isLoading"></home-page>
 
 <div class="main-container" *ngIf="isLoading">
   <div class="lottie-container">
