@@ -1,4 +1,4 @@
-import {Component, HostListener} from '@angular/core';
+import {Component, EventEmitter, HostListener, Output} from '@angular/core';
 
 @Component({
   selector: 'divox-header',
@@ -9,10 +9,13 @@ export class DivoxHeaderComponent {
   isMenuChanged = false;
 
   constructor(
+    // private appFacade: AppFacade
   ) {}
 
+  @Output("linkClicked") linkClicked = new EventEmitter<string>();
+
   setLinkClicked(link: string){
-    // this.appFacade.setLinkClicked(link);
+    this.linkClicked.emit(link);
   }
 
   menuOnClick(){

@@ -1,5 +1,8 @@
 <div class="home-page-container">
 
+<!-- Welcome container -->
+
+
   <div class="welcome-container">
     <img src="./assets/background-color.svg" class="background-image">
     <img src="./assets/main-image.svg" class="main-illustration">
@@ -25,7 +28,10 @@
 
   </div>
 
-  <div class="services-container">
+
+<!-- Our services -->
+
+  <div class="services-container" id="services">
     <div class="services-text">
       <h1 class="services-main-txt">What We Do</h1>
       <h1 class="services-main-txt light-weight">For Your Business</h1>
@@ -84,7 +90,11 @@
 
   </div>
 
-  <div class="why-divox-container">
+
+<!-- Why is Divox -->
+
+
+  <div class="why-divox-container" id="whyDivox">
 
     <div class="why-image-container">
       <img src="./assets/why-divox.png" alt="" class="why-divox-img" width="875" height="1008"/>
@@ -98,7 +108,11 @@
 
   </div>
 
-  <div class="team-container">
+
+<!-- Our team  -->
+
+
+  <div class="team-container" id="ourTeam">
     <div class="services-text">
       <h1 class="services-main-txt">{{englishTextService.ourTeam.ourTeamText}}</h1>
     </div>
@@ -145,5 +159,78 @@
 
     </div>
 
+    <img src="./assets/dotted-circle.png" alt="" class="dotted-circle" width="478" height="498"/>
+  </div>
+
+<!-- About us-->
+
+<div class="why-divox-container about-us-container" id="aboutUs">
+
+  <div class="about-us-text-container">
+    <h1 class="why-divox-head-txt about-us-text">About Us</h1>
+    <h1 class="about-us-subtext">Fake or  <mark class="light-weight">Real</mark>!</h1>
+  </div>
+
+<div class="about-us-card-container">
+  <div class="about-us-card">
+    <h4 class="card-head">About Divox</h4>
+    <p class="why-divox-description about-us-description">{{englishTextService.aboutUsText.aboutDivoxText}}</p>
+  </div>
+  <div class="about-us-card">
+    <h4 class="card-head">Our Approach</h4>
+    <p class="why-divox-description about-us-description">{{englishTextService.aboutUsText.ourApproachText}}</p>
+  </div>
+  <div class="about-us-card">
+    <h4 class="card-head">Collaboration And Results</h4>
+    <p class="why-divox-description about-us-description">{{englishTextService.aboutUsText.collaborationAndResultsText}}</p>
   </div>
 </div>
+
+</div>
+
+
+
+<!--  Contact Us  -->
+
+  <div class="contact-us-container align-items-center">
+
+    <!-- 	 SVG	 -->
+    <img src="assets/contact-us-image.svg" class="contact-us-img" alt=""/>
+
+    <form>
+      <h1 class="title text-center mb-4">Talk to Us</h1>
+
+      <!-- Name -->
+      <div class="form-group position-relative">
+        <label for="formName" class="d-block">
+          <i class="icon" data-feather="user"></i>
+        </label>
+        <input type="text" id="formName" class="form-control form-control-lg thick" placeholder="Name">
+      </div>
+
+      <!-- E-mail -->
+      <div class="form-group position-relative top-space">
+        <label for="formEmail" class="d-block">
+          <i class="icon" data-feather="mail"></i>
+        </label>
+        <input type="email" id="formEmail" class="form-control form-control-lg thick" placeholder="E-mail">
+      </div>
+
+      <!-- Message -->
+      <div class="form-group message top-space">
+        <textarea id="formMessage" class="form-control form-control-lg text-area" rows="7" placeholder="Mensagem"></textarea>
+      </div>
+
+      <!-- Submit btn -->
+      <div class="text-center">
+        <button type="submit" class="btn btn-primary" tabIndex="-1">Send message</button>
+      </div>
+    </form>
+
+  </div>
+
+
+</div>
+
+
+

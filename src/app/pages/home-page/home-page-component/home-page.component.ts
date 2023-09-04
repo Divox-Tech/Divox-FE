@@ -10,6 +10,7 @@ import {EnglishTextService} from "../../../text-services/english-text.service";
 export class HomePageComponent implements OnInit{
   constructor(
     public englishTextService: EnglishTextService,
+    // private appFacade: AppFacade
   ) {}
 
   userEmail: any = "";
