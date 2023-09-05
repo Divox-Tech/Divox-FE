@@ -234,7 +234,7 @@ button:hover .arrow:before {
   height: 40px;
   border: none;
   outline: none;
-  caret-color: rgb(255, 81, 0);
+  caret-color: #46285D;
   background-color: rgb(255, 255, 255);
   border-radius: 30px;
   padding-left: 15px;
@@ -433,6 +433,10 @@ button:hover .arrow:before {
 .textarea-input{
   height: 120px;
   padding-top: 15px;
+}
+
+textarea {
+  resize: none;
 }
 
 .submit-btn{

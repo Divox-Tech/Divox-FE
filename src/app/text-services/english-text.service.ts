@@ -66,6 +66,8 @@ export class EnglishTextService {
     graphicDesignerDescription: `Dedicated graphics designers for custom logo and illustrations`,
     backendText: `Back-end Engineer`,
     backendDescription: `Backend team with one senior back-end engineer`,
+    contentCreatorText: `Content Creator`,
+    contentCreatorDescription: `Passionate content creators producing tailored content and captivating narratives for diverse audiences.`
   }
 
 }

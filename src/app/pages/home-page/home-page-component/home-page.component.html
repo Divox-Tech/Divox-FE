@@ -158,6 +158,14 @@
         <div class="card-description">{{englishTextService.ourTeam.backendDescription}}</div>
       </div>
 
+      <div class="card team-card">
+        <div class="illustration-container orange">
+          <img src="./assets/content-creator.png" alt="" class="services-illustration" width="512" height="512">
+        </div>
+        <div class="card-title">{{englishTextService.ourTeam.contentCreatorText}}</div>
+        <div class="card-description">{{englishTextService.ourTeam.contentCreatorDescription}}</div>
+      </div>
+
     </div>
 
     <img src="./assets/dotted-circle.png" alt="" class="dotted-circle" width="478" height="498"/>
@@ -198,19 +206,19 @@
 
   <div class="contact-us-form">
     <div class="InputContainer">
-      <input placeholder="Full name" id="fullName" class="input" name="text" type="text" [(ngModel)]="userFullName">
+      <input placeholder="Full name" autocomplete="off" id="fullName" class="input" name="text" type="text" [(ngModel)]="userFullName">
     </div>
 
     <div class="InputContainer">
-      <input placeholder="Email" id="email" class="input" name="text" type="text" [(ngModel)]="userEmail">
+      <input placeholder="Email" id="email" autocomplete="off" class="input" name="text" type="text" [(ngModel)]="userEmail">
     </div>
 
     <div class="InputContainer">
-      <input placeholder="Email" id="number" class="input" name="text" type="text" [(ngModel)]="phoneNumber">
+      <input placeholder="Phone Number" autocomplete="off" id="number" class="input" name="text" type="text" [(ngModel)]="phoneNumber">
     </div>
 
     <div class="InputContainer textarea-container">
-      <textarea placeholder="Your Message" id="textArea" class="input textarea-input" name="text" type="text" [(ngModel)]="userMessage"></textarea>
+      <textarea placeholder="Your Message" autocomplete="off" id="textArea" class="input textarea-input" name="text" type="text" [(ngModel)]="userMessage"></textarea>
     </div>
 
 
