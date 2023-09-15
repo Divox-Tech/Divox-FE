@@ -5,6 +5,7 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {BrowserModule} from "@angular/platform-browser";
 import {RouterOutlet} from "@angular/router";
 import {ContactUsButtonComponent} from "../../core/conatct-us-button/contact-us-button.component";
+import {HttpClient, HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -15,9 +16,10 @@ import {ContactUsButtonComponent} from "../../core/conatct-us-button/contact-us-
     FormsModule,
     ReactiveFormsModule,
     RouterOutlet,
-    CoreModule
+    CoreModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [HttpClient],
   bootstrap: [],
   exports: [
     HomePageComponent
