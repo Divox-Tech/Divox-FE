@@ -151,6 +151,7 @@ $main-text-color: #331B3B;
   width: 553px;
   height: 490px;
   transform: translate(60%, -30%);
+  display: none;
 }
 
 
@@ -167,6 +168,7 @@ $main-text-color: #331B3B;
   .change-bg{
     width: 700px;
     height: 650px;
+    display: block;
   }
   a{
     font-size: 30px;

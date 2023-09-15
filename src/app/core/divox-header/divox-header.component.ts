@@ -16,6 +16,7 @@ export class DivoxHeaderComponent {
 
   setLinkClicked(link: string){
     this.linkClicked.emit(link);
+    this.isMenuChanged = !this.isMenuChanged;
   }
 
   menuOnClick(){
