@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {EnglishTextService} from "../../../text-services/english-text.service";
 import {AppFacade} from "../../../services/app.facade";
 
@@ -18,6 +18,8 @@ export class HomePageComponent implements OnInit{
   userFullName: any = "";
   userMessage: any = "";
   phoneNumber: any = "";
+
+  @Input("siteLanguage") siteLanguage: string = "en";
 
   ngOnInit(){
   }

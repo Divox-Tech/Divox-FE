@@ -15,9 +15,18 @@
       </div>
     </div>
 
-    <div class="right-header-section">
-      <app-contact-us-btn (onClick)="setLinkClicked('contactUs')"></app-contact-us-btn>
+    <div class="language-dropdown">
+      <button class="dropbtn">
+        <img src="english-flag.png" alt="English Flag" class="flag">
+        English
+        <span>&#9660;</span>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">English <img src="english-flag.png" alt="English Flag" class="flag"></a>
+        <a href="#">عربي <img src="arabic-flag.png" alt="Arabic Flag" class="flag"></a>
+      </div>
     </div>
 
+      <app-contact-us-btn (onClick)="setLinkClicked('contactUs')"></app-contact-us-btn>
   </div>
 </div>

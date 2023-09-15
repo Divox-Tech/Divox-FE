@@ -7,20 +7,21 @@ import {Component, OnInit} from '@angular/core';
 })
 
 export class AppComponent implements OnInit{
-lottieOptions: {
-    path: string; // Replace with the path to your Lottie animation JSON file
-    autoplay: boolean; loop: boolean;
-};
-
-isLoading: boolean = true;
-
-constructor() {
-  this.lottieOptions = {
-    path: './assets/fox.json',
-    autoplay: true,
-    loop: true
+  lottieOptions: {
+      path: string; // Replace with the path to your Lottie animation JSON file
+      autoplay: boolean; loop: boolean;
   };
-}
+
+  isLoading: boolean = true;
+  siteLanguage: string = "en";
+
+  constructor() {
+    this.lottieOptions = {
+      path: './assets/fox.json',
+      autoplay: true,
+      loop: true
+    };
+  }
 
   ngOnInit(): void {
     setTimeout(() => {
