@@ -204,7 +204,7 @@
 <div class="contact-us-container" id="contact-us">
   <img src="/assets/contact-us.jpg" class="contact-us-img" alt=""/>
 
-  <div class="contact-us-form">
+  <form class="contact-us-form" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
     <div class="InputContainer">
       <input placeholder="Full name" autocomplete="off" id="fullName" class="input" name="text" type="text" [(ngModel)]="userFullName">
     </div>
@@ -222,7 +222,7 @@
     </div>
 
 
-    <button class="contact-us-button submit-btn" (click)="submitForm()">
+    <button class="contact-us-button submit-btn" type="submit">
       Send message
       <div class="arrow-wrapper">
         <div class="arrow"></div>
@@ -230,7 +230,7 @@
       </div>
     </button>
 
-  </div>
+  </form>
 </div>
 
 <!--  Footer  -->
