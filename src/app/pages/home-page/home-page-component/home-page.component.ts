@@ -1,6 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {EnglishTextService} from "../../../text-services/english-text.service";
-import {AppFacade} from "../../../services/app.facade";
 import {HttpClient, HttpHeaders} from "@angular/common/http";
 import {NgForm} from "@angular/forms";
 
@@ -13,7 +12,6 @@ import {NgForm} from "@angular/forms";
 export class HomePageComponent implements OnInit{
   constructor(
     public englishTextService: EnglishTextService,
-    // private appFacade: AppFacade
     private http: HttpClient
   ) {}
 
@@ -25,13 +23,6 @@ export class HomePageComponent implements OnInit{
   @Input("siteLanguage") siteLanguage: string = "en";
 
   ngOnInit(){
-  }
-
-  test(){
-    console.log(this.userEmail);
-    console.log(this.userFullName);
-    console.log(this.userMessage);
-    console.log(this.phoneNumber);
   }
 
   scrollToView(){

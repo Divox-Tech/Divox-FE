@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {Meta, Title} from "@angular/platform-browser";
 
 @Component({
   selector: 'app-root',
@@ -15,7 +16,8 @@ export class AppComponent implements OnInit{
   isLoading: boolean = true;
   siteLanguage: string = "en";
 
-  constructor() {
+
+  constructor(private titleService: Title, private metaService: Meta,) {
     this.lottieOptions = {
       path: './assets/fox.json',
       autoplay: true,
@@ -26,7 +28,10 @@ export class AppComponent implements OnInit{
   ngOnInit(): void {
     setTimeout(() => {
       this.isLoading = false;
-    }, 3000)
+    }, 3000);
+
+    this.titleService.setTitle('Divox Agency - Web Development, Marketing, Design, and More');
+    this.metaService.updateTag({ name: 'description', content: 'Divox Agency is your one-stop solution for web development, digital marketing, creative design, and packaging services. We bring your ideas to life with cutting-edge technology and creative expertise.' });
   }
 
   scrollToView(viewName: string){
