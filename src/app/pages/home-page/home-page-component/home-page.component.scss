@@ -327,8 +327,8 @@ button:hover .arrow:before {
 .why-divox-container{
   display: flex;
   align-items: center;
-  width: 100%;
   margin-top: 50px;
+  justify-content: space-around;
 }
 
 .why-divox-text{

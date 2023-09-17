@@ -38,12 +38,12 @@
         </div>
         <nav class="nav" id="nav" [class.change]="isMenuChanged">
           <ul>
-            <li><a (click)="setLinkClicked('home')">Home</a></li>
-            <li><a (click)="setLinkClicked('services')">Services</a></li>
-            <li><a (click)="setLinkClicked('whyDivox')">Why Divox</a></li>
-            <li><a (click)="setLinkClicked('ourTeam')">Our team</a></li>
-            <li><a (click)="setLinkClicked('aboutUs')">About Us</a></li>
-            <li><a (click)="setLinkClicked('contactUs')">Contact Us</a></li>
+            <li><a (click)="setLinkClicked('home');this.isMenuChanged = !this.isMenuChanged;">Home</a></li>
+            <li><a (click)="setLinkClicked('services');this.isMenuChanged = !this.isMenuChanged;">Services</a></li>
+            <li><a (click)="setLinkClicked('whyDivox');this.isMenuChanged = !this.isMenuChanged;">Why Divox</a></li>
+            <li><a (click)="setLinkClicked('ourTeam');this.isMenuChanged = !this.isMenuChanged;">Our team</a></li>
+            <li><a (click)="setLinkClicked('aboutUs');this.isMenuChanged = !this.isMenuChanged;">About Us</a></li>
+            <li><a (click)="setLinkClicked('contactUs');this.isMenuChanged = !this.isMenuChanged;">Contact Us</a></li>
           </ul>
         </nav>
       </div>
