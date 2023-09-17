@@ -201,37 +201,37 @@
 
 <!--  Contact Us  -->
 
-<div class="contact-us-container" id="contact-us">
-  <img src="/assets/contact-us.jpg" class="contact-us-img" alt=""/>
+  <div class="contact-us-container" id="contact-us">
+    <img src="/assets/contact-us.jpg" class="contact-us-img" alt=""/>
 
-  <div class="contact-us-form">
-    <div class="InputContainer">
-      <input placeholder="Full name" autocomplete="off" id="fullName" class="input" name="text" type="text" [(ngModel)]="userFullName">
-    </div>
-
-    <div class="InputContainer">
-      <input placeholder="Email" id="email" autocomplete="off" class="input" name="text" type="text" [(ngModel)]="userEmail">
-    </div>
-
-    <div class="InputContainer">
-      <input placeholder="Phone Number" autocomplete="off" id="number" class="input" name="text" type="text" [(ngModel)]="phoneNumber">
-    </div>
-
-    <div class="InputContainer textarea-container">
-      <textarea placeholder="Your Message" autocomplete="off" id="textArea" class="input textarea-input" name="text" type="text" [(ngModel)]="userMessage"></textarea>
-    </div>
-
-
-    <button class="contact-us-button submit-btn" (click)="submitForm()">
-      Send message
-      <div class="arrow-wrapper">
-        <div class="arrow"></div>
-
+    <form class="contact-us-form" (ngSubmit)="onSubmit()" #contactForm="ngForm">
+      <div class="InputContainer">
+        <input placeholder="Full name" autocomplete="off" id="fullName" class="input" name="text" type="text" [(ngModel)]="userFullName">
       </div>
-    </button>
 
+      <div class="InputContainer">
+        <input placeholder="Email" id="email" autocomplete="off" class="input" name="text" type="text" [(ngModel)]="userEmail">
+      </div>
+
+      <div class="InputContainer">
+        <input placeholder="Phone Number" autocomplete="off" id="number" class="input" name="text" type="text" [(ngModel)]="phoneNumber">
+      </div>
+
+      <div class="InputContainer textarea-container">
+        <textarea placeholder="Your Message" autocomplete="off" id="textArea" class="input textarea-input" name="text" type="text" [(ngModel)]="userMessage"></textarea>
+      </div>
+
+
+      <button class="contact-us-button submit-btn" type="submit">
+        Send message
+        <div class="arrow-wrapper">
+          <div class="arrow"></div>
+
+        </div>
+      </button>
+
+    </form>
   </div>
-</div>
 
 <!--  Footer  -->
 <div class="footer-container">
