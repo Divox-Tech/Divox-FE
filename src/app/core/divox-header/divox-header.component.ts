@@ -9,10 +9,11 @@ export class DivoxHeaderComponent {
   isMenuChanged = false;
 
   constructor(
-    // private appFacade: AppFacade
   ) {}
 
   @Output("linkClicked") linkClicked = new EventEmitter<string>();
+
+  selectedLanguage: string = "en";
 
   setLinkClicked(link: string){
     this.linkClicked.emit(link);
@@ -22,6 +23,10 @@ export class DivoxHeaderComponent {
   menuOnClick(){
     this.isMenuChanged = !this.isMenuChanged;
 
+  }
+
+  changeLanguage(lang: string){
+    this.selectedLanguage = lang;
   }
 
 }

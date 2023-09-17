@@ -1,5 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {EnglishTextService} from "../../../text-services/english-text.service";
+import {HttpClient, HttpHeaders} from "@angular/common/http";
+import {NgForm} from "@angular/forms";
 
 @Component({
   selector: 'home-page',
@@ -10,7 +12,7 @@ import {EnglishTextService} from "../../../text-services/english-text.service";
 export class HomePageComponent implements OnInit{
   constructor(
     public englishTextService: EnglishTextService,
-    // private appFacade: AppFacade
+    private http: HttpClient
   ) {}
 
   userEmail: any = "";
@@ -23,17 +25,25 @@ export class HomePageComponent implements OnInit{
   ngOnInit(){
   }
 
-  test(){
-    console.log(this.userEmail);
-    console.log(this.userFullName);
-    console.log(this.userMessage);
-    console.log(this.phoneNumber);
-  }
-
   scrollToView(){
     var elementToScrollTo = document.getElementById("contact-us")
     elementToScrollTo?.scrollIntoView({ behavior: "smooth" });
   }
+
+  onSubmit(contactForm: NgForm) {
+    if (contactForm.valid) {
+      const email = contactForm.value;
+      const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
+      this.http.post('https://formspree.io/f/mleylljn',
+        { name: this.userFullName, replyto: this.userEmail, message: this.userMessage },
+        { 'headers': headers }).subscribe(
+        response => {
+          console.log(response);
+        }
+      );
+    }
+  }
+
 
 }
 

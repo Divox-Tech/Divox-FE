@@ -15,20 +15,21 @@
       </div>
     </div>
 
-    <div class="language-dropdown">
-      <button class="dropbtn">
-        <img src="english-flag.png" alt="English Flag" class="flag">
-        English
-        <span>&#9660;</span>
-      </button>
-      <div class="dropdown-content">
-        <a href="#">English <img src="english-flag.png" alt="English Flag" class="flag"></a>
-        <a href="#">عربي <img src="arabic-flag.png" alt="Arabic Flag" class="flag"></a>
-      </div>
-    </div>
+    <div class="right-header-section">
+<!--      <div class="language-dropdown">-->
+<!--        <button class="dropbtn">-->
+<!--          <img src="./assets/language.svg" alt="English Flag" class="flag">-->
+<!--          {{selectedLanguage}}-->
+<!--          <span class="arrow">&#9660;</span>-->
+<!--        </button>-->
+<!--        <div class="dropdown-content">-->
+<!--          <a (click)="changeLanguage('en')"><img src="./assets/english-flag.svg" alt="English Flag" class="flag"> English</a>-->
+<!--          <a (click)="changeLanguage('ar')"><img src="./assets/arabic-flag.svg" alt="Arabic Flag" class="flag">عربي </a>-->
+<!--        </div>-->
+<!--      </div>-->
 
       <app-contact-us-btn (onClick)="setLinkClicked('contactUs')"></app-contact-us-btn>
-
+    </div>
       <div id="menu" >
         <div id="menu-bar" [class.change]="isMenuChanged" (click)="menuOnClick()">
           <div id="bar1" class="bar"></div>
@@ -51,4 +52,3 @@
     </div>
 
   </div>
-</div>
