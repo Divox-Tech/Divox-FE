@@ -328,7 +328,7 @@ button:hover .arrow:before {
   display: flex;
   align-items: center;
   margin-top: 50px;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .why-divox-text{
@@ -343,7 +343,7 @@ button:hover .arrow:before {
 }
 
 .why-image-container{
-  width: 55%;
+  width: 35%;
 }
 
 .why-divox-img{
