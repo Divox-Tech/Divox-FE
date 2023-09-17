@@ -1,11 +1,9 @@
 <div class="header-container">
   <div class="header-content">
-
     <div class="left-header-section">
       <div class="divox-logo-container">
         <img src="./assets/divox-logo.svg" alt="" class="divox-logo" />
       </div>
-
       <div class="header-items">
         <a class="header-item" (click)="setLinkClicked('home')">Home</a>
         <a class="header-item" (click)="setLinkClicked('services')">Services</a>
@@ -14,21 +12,42 @@
         <a class="header-item" (click)="setLinkClicked('aboutUs')">About Us</a>
       </div>
     </div>
-
     <div class="right-header-section">
-<!--      <div class="language-dropdown">-->
-<!--        <button class="dropbtn">-->
-<!--          <img src="./assets/language.svg" alt="English Flag" class="flag">-->
-<!--          {{selectedLanguage}}-->
-<!--          <span class="arrow">&#9660;</span>-->
-<!--        </button>-->
-<!--        <div class="dropdown-content">-->
-<!--          <a (click)="changeLanguage('en')"><img src="./assets/english-flag.svg" alt="English Flag" class="flag"> English</a>-->
-<!--          <a (click)="changeLanguage('ar')"><img src="./assets/arabic-flag.svg" alt="Arabic Flag" class="flag">عربي </a>-->
-<!--        </div>-->
-<!--      </div>-->
-
+      <!--      <div class="language-dropdown">-->
+      <!--        <button class="dropbtn">-->
+      <!--          <img src="./assets/language.svg" alt="English Flag" class="flag">-->
+      <!--          {{selectedLanguage}}-->
+      <!--          <span class="arrow">&#9660;</span>-->
+      <!--        </button>-->
+      <!--        <div class="dropdown-content">-->
+      <!--          <a (click)="changeLanguage('en')"><img src="./assets/english-flag.svg" alt="English Flag" class="flag"> English</a>-->
+      <!--          <a (click)="changeLanguage('ar')"><img src="./assets/arabic-flag.svg" alt="Arabic Flag" class="flag">عربي </a>-->
+      <!--        </div>-->
+      <!--      </div>-->
       <app-contact-us-btn (onClick)="setLinkClicked('contactUs')"></app-contact-us-btn>
     </div>
+    <div id="menu" >
+      <div id="menu-bar" [class.change]="isMenuChanged" (click)="menuOnClick()">
+        <div id="bar1" class="bar"></div>
+        <div id="bar2" class="bar"></div>
+        <div id="bar3" class="bar"></div>"
+      </div>
+      <nav class="nav" id="nav" [class.change]="isMenuChanged">
+        <ul>
+          <li><a (click)="setLinkClicked('home');this.isMenuChanged = !this.isMenuChanged;">Home</a></li>
+          <li><a (click)="setLinkClicked('services');this.isMenuChanged = !this.isMenuChanged;">Services</a></li>
+          <li><a (click)="setLinkClicked('whyDivox');this.isMenuChanged = !this.isMenuChanged;">Why Divox</a></li>
+          <li><a (click)="setLinkClicked('ourTeam');this.isMenuChanged = !this.isMenuChanged;">Our team</a></li>
+          <li><a (click)="setLinkClicked('aboutUs');this.isMenuChanged = !this.isMenuChanged;">About Us</a></li>
+          <li><a (click)="setLinkClicked('contactUs');this.isMenuChanged = !this.isMenuChanged;">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="menu-bg" id="menu-bg" [class.change-bg]="isMenuChanged"></div>
   </div>
 </div>
+
+
+
+
+

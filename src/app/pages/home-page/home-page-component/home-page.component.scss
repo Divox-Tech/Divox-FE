@@ -1,25 +1,24 @@
 @import '/src/screen.scss';
+
 $main-text-color: #331B3B;
-
 .home-page-container{
-    width: 100vw;
-    height: 100svh;
+  width: 100vw;
+  height: 100svh;
 }
-
 .welcome-container{
   height: 589px;
   width: 100%;
   padding: 200px 0 0 0;
 }
-
-
+.circle{
+  visibility: hidden;
+}
 .divox-slogan{
   color: $main-text-color;
   font-size: 49px;
   white-space: pre-line;
   font-weight: bold;
 }
-
 .light-weight{
   font-weight: 400;
 }
@@ -28,35 +27,29 @@ $main-text-color: #331B3B;
   right: 0;
   top: 80px;
   z-index: 0;
-  width: 45%;
+  width: 43%;
 }
-
 .main-illustration{
   position: absolute;
   right: 0;
   top: 110px;
-  width: 50%;
+  width: 45%;
 }
-
 .main-text{
   width: 37%;
   padding-left: 3%;
 }
-
 .what-is-divox{
   color: $main-text-color;
   font-size: 17px;
   line-height: 28px;
   margin-top: 25px;
   max-width: 460px;
-
 }
-
 mark{
   color: $main-text-color;
   background-color: #ffbc068c;
 }
-
 .services-container{
   background-color: #EDE5F2;
   margin-top: 10%;
@@ -66,18 +59,15 @@ mark{
   padding: 90px 0;
   border-radius: 20% 0 0 0;
 }
-
 .services-text{
   margin-bottom: 50px;
 }
-
 .services-main-txt{
   display: flex;
   justify-content: center;
   width: 100%;
   color: $main-text-color;
 }
-
 .card-row{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -85,7 +75,6 @@ mark{
   margin-top: 40px;
   padding: 0 3%;
 }
-
 .card{
   display: flex;
   flex-direction: column;
@@ -96,7 +85,6 @@ mark{
   box-shadow: 0 0 9px 2px rgba(0, 0, 0, 0.05);
   padding: 19px;
 }
-
 .illustration-container{
   width: 52px;
   height: 48px;
@@ -106,24 +94,19 @@ mark{
   align-items: center;
   justify-content: center;
 }
-
 .services-illustration{
   width: 34px;
   height: 34px;
 }
-
 .orange{
   background-color: #FFDED4;
 }
-
 .yellow{
   background-color: #FFEED4;
 }
-
 .baby-blue{
   background-color: #D4F0FF;
 }
-
 .card-title{
   font-size: 16px;
   color: $main-text-color;
@@ -131,20 +114,16 @@ mark{
   margin-top: 20px;
   line-height: 24px;
 }
-
 .card-description{
   font-size: 15px;
   color: $main-text-color;
   margin-top: 8px;
   line-height: 19px;
 }
-
-
-
 button {
-  --primary-color: #804fa7;
+  --primary-color: #804FA7;
   --secondary-color: #fff;
-  --hover-color: #c158ab;
+  --hover-color: #C158AB;
   --arrow-width: 10px;
   --arrow-stroke: 2px;
   box-sizing: border-box;
@@ -160,13 +139,11 @@ button {
   font-weight: bold;
   cursor: pointer;
 }
-
 button .arrow-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 button .arrow {
   margin-top: 1px;
   width: var(--arrow-width);
@@ -175,7 +152,6 @@ button .arrow {
   position: relative;
   transition: 0.2s;
 }
-
 button .arrow::before {
   content: "";
   box-sizing: border-box;
@@ -189,23 +165,18 @@ button .arrow::before {
   padding: 3px;
   transform: rotate(-45deg);
 }
-
 button:hover {
   background-color: var(--hover-color);
 }
-
 button:hover .arrow {
   background: var(--secondary-color);
 }
-
 button:hover .arrow:before {
   right: 0;
 }
-
 .contact-us-button{
   height: 50px;
 }
-
 .email-form{
   display: flex;
   margin-top: 30px;
@@ -214,9 +185,7 @@ button:hover .arrow:before {
   justify-content: space-between;
   align-items: center;
 }
-
 .InputContainer {
-  width: 350px;
   height: 50px;
   display: flex;
   align-items: center;
@@ -227,10 +196,10 @@ button:hover .arrow:before {
   cursor: pointer;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.075);
   margin-top: 30px;
+  padding: 0 12px;
 }
-
 .input {
-  width: 320px;
+  width: 100%;
   height: 40px;
   border: none;
   outline: none;
@@ -242,26 +211,12 @@ button:hover .arrow:before {
   color: rgb(19, 19, 19);
   font-size: 13.4px;
 }
-
 @media screen and (max-width:   1300px) {
   .welcome-container{
     height: 450px;
   }
-
 }
-@media screen and (max-width:   1100px) {
-  .welcome-container{
-    height: 380px;
-  }
-
-}
-@media screen and (max-width:   1000px) {
-  //.background-image {
-  //  width: 35%;
-  //}
-  //.main-illustration{
-  //  width: 35%;
-  //}
+@media screen and (max-width:   1250px) {
   .main-text{
     width: 45%;
   }
@@ -269,65 +224,85 @@ button:hover .arrow:before {
     font-size: 35px;
   }
   .welcome-container{
-      height: fit-content;
+    height: 450px;
+    padding: 150px 0 0 0;
   }
   .what-is-divox{
     font-size: 16px;
+  }
+  .main-illustration{
+    top: 60px;
+  }
+}
+@media screen and (max-width:   1100px) {
+  .welcome-container{
+    height: 400px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .welcome-container{
+    padding: 145px 0 0 0;
+    height: 330px;
   }
 }
 @media screen and (max-width: 850px) {
   .divox-slogan{
     font-size: 30px;
+    color: white;
   }
   .what-is-divox{
     font-size: 14px;
+    color: white;
+  }
+  .welcome-container{
+    background-image: linear-gradient(to right top, #7E4DA7, #9150A9, #A352AA, #B455AB, #C459AB);
+    padding-bottom: 90px;
+    height: fit-content;
+  }
+  .background-image{
+    visibility: hidden;
+  }
+  .light-weight{
+    mark{
+      color: #FFFFFF;
+      background-color: transparent;
+    }
+  }
+  .main-illustration {
+    top: 80px;
+  }
+  .email-form{
+    display: none;
   }
 }
-@media screen and (max-width: 800px) {
-  .card-row {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media screen and (max-width: 500px) {
-  .card-row {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
-
 .dotted-circle{
   position: absolute;
   object-fit: cover;
   object-position: 120px -260px;
   right: 0;
 }
-
 .why-divox-container{
   display: flex;
   align-items: center;
-  width: 100%;
   margin-top: 50px;
+  justify-content: space-evenly;
 }
-
 .why-divox-text{
   width: 39%;
 }
-
 .why-divox-head-txt{
   font-size: 48px;
   line-height: 105px;
   color: $main-text-color;
   font-weight: bold;
 }
-
 .why-image-container{
-  width: 55%;
+  width: 35%;
 }
-
 .why-divox-img{
   width: 100%;
   height: 100%;
 }
-
 .why-divox-description{
   font-size: 17px;
   line-height: 24px;
@@ -335,7 +310,6 @@ button:hover .arrow:before {
   opacity: 90%;
   text-align: justify;
 }
-
 .team-container{
   background-color: #F8E6F3;
   margin-top: 10%;
@@ -345,11 +319,9 @@ button:hover .arrow:before {
   padding: 90px 0;
   border-radius: 20% 0 0 0;
 }
-
 .team-card{
   height: 150px;
 }
-
 .about-us-container{
   display: flex;
   flex-direction: column;
@@ -357,37 +329,35 @@ button:hover .arrow:before {
   width: 100%;
   padding-bottom: 50px;
 }
-
 .about-us-card-container{
-  display: flex;
-  justify-content: space-evenly;
-  margin-top: 30px;
-  width: 100%;
-  padding-bottom: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  padding: 0 3%;
+  @media screen and (max-width: 1300px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media screen and (max-width: 750px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
-
 .about-us-img{
   width: 90%;
   height: 90%;
 }
-
 .about-us-text{
   line-height: 40px;
 }
-
 .about-us-subtext{
   font-size: 48px;
   line-height: 105px;
   color: $main-text-color;
   font-weight: normal;
 }
-
 .about-us-description{
   text-align: center;
 }
-
 .about-us-card{
-  width: 23%;
   padding: 0 3%;
   height: 300px;
   background-color: #fff;
@@ -398,12 +368,10 @@ button:hover .arrow:before {
   justify-content: space-evenly;
   align-items: center;
 }
-
 .card-head{
   font-size: 20px;
   font-weight: 600;
 }
-
 .about-us-text-container{
   width: 100%;
   align-items: center;
@@ -411,55 +379,131 @@ button:hover .arrow:before {
   display: flex;
   flex-direction: column;
 }
-
 .contact-us-container{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  padding: 0 3%;
+  flex-direction: row-reverse;
 }
-
 .contact-us-img{
   width: 45%;
 }
-
 .contact-us-form{
   width: 40%;
 }
-
 .textarea-container{
   height: 150px;
 }
-
 .textarea-input{
   height: 120px;
   padding-top: 15px;
 }
-
 textarea {
   resize: none;
 }
-
 .submit-btn{
   margin-top: 30px;
 }
-
-
 .footer-container{
-  width: 100%;
   height: 100px;
-  background-color: #45285d;
+  background-color: #45285D;
   margin-top: 50px;
   display: flex;
-  justify-content: space-around;
   align-items: center;
+  justify-content: space-between;
+  padding: 0 3%;
 }
-
 .copy-right{
   color: #fff;
   font-size: 18px;
 }
-
 .social-media-icon{
   width: 40px;
   margin-left: 20px;
+}
+@media screen and (max-width: 950px) {
+  .contact-us-container{
+    flex-direction: column;
+  }
+  .contact-us-img{
+    width: 80%;
+  }
+  .contact-us-form{
+    width: 90%;
+    margin-top: -12%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .dotted-circle{
+    width: 400px;
+    height: 420px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .why-divox-head-txt{
+    font-size: 38px;
+  }
+  .why-divox-description{
+    font-size: 16px;
+  }
+  .why-image-container{
+    width: 50%;
+  }
+  .why-divox-text{
+    width: 40%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .card-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .why-divox-head-txt{
+    font-size: 34px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .main-illustration {
+    top: 95px;
+  }
+  .divox-slogan {
+    font-size: 20px;
+  }
+  .what-is-divox {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .dotted-circle{
+    visibility: hidden;
+  }
+  .why-divox-text{
+    width: 45%;
+  }
+}
+@media screen and (max-width: 650px) {
+  .main-text {
+    width: 85%;
+  }
+  .main-illustration{
+    visibility: hidden;
+  }
+  .circle{
+    visibility: visible;
+  }
+  .dotted-circle{
+    visibility: hidden;
+  }
+  .why-image-container{
+    visibility: hidden;
+    width: 0%;
+  }
+  .why-divox-text{
+    width: 100%;
+    padding: 3%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .card-row {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }

@@ -1,43 +1,35 @@
 <div class="home-page-container">
 
-<!-- Welcome container -->
-
-
+  <!-- Welcome container -->
   <div class="welcome-container">
     <img src="./assets/background-color.svg" class="background-image">
     <img src="./assets/main-image.svg" class="main-illustration">
-
     <div class="main-text">
       <h1 class="divox-slogan">From Tech Wizardry</h1>
       <h1 class="divox-slogan light-weight"><mark>to Marketing Mastery</mark></h1>
       <h3 class="what-is-divox">{{englishTextService.whatIsDivox}}</h3>
     </div>
-
     <div class="email-form">
-<!--      <div class="InputContainer">-->
-<!--        <input placeholder="Type Your Email" id="input" class="input" name="userEmail" type="email" autocomplete="false">-->
-<!--      </div>-->
-
-        <button class="contact-us-button" (click)="scrollToView()">
-          Talk To Us
-          <div class="arrow-wrapper">
-            <div class="arrow"></div>
-
-          </div>
-        </button>
+      <!--      <div class="InputContainer">-->
+      <!--        <input placeholder="Type Your Email" id="input" class="input" name="userEmail" type="email" autocomplete="false">-->
+      <!--      </div>-->
+      <button class="contact-us-button" (click)="scrollToView()">
+        Talk To Us
+        <div class="arrow-wrapper">
+          <div class="arrow"></div>
+        </div>
+      </button>
     </div>
-
   </div>
 
 
-<!-- Our services -->
 
+  <!-- Our services -->
   <div class="services-container" id="services">
     <div class="services-text">
       <h1 class="services-main-txt">What We Do</h1>
       <h1 class="services-main-txt light-weight">For Your Business</h1>
     </div>
-
     <div class="card-row">
       <div class="card">
         <div class="illustration-container orange">
@@ -46,7 +38,6 @@
         <div class="card-title">{{englishTextService.servicesText.webAppText}}</div>
         <div class="card-description">{{englishTextService.servicesText.webAppDescription}}</div>
       </div>
-
       <div class="card">
         <div class="illustration-container yellow">
           <img src="./assets/branding.png" alt="" class="services-illustration" width="512" height="512">
@@ -54,7 +45,6 @@
         <div class="card-title">{{englishTextService.servicesText.brandingText}}</div>
         <div class="card-description">{{englishTextService.servicesText.brandingDescription}}</div>
       </div>
-
       <div class="card">
         <div class="illustration-container baby-blue">
           <img src="./assets/logo-design.png" alt="" class="services-illustration" width="512" height="512">
@@ -69,7 +59,6 @@
         <div class="card-title">{{englishTextService.servicesText.motionGraphicsVideos}}</div>
         <div class="card-description">{{englishTextService.servicesText.motionGraphicsVideosDescription}}</div>
       </div>
-
       <div class="card">
         <div class="illustration-container orange">
           <img src="./assets/content-creator.png" alt="" class="services-illustration" width="512" height="512">
@@ -77,7 +66,6 @@
         <div class="card-title">{{englishTextService.servicesText.ContentCreator}}</div>
         <div class="card-description">{{englishTextService.servicesText.ContentCreatorDescription}}</div>
       </div>
-
       <div class="card">
         <div class="illustration-container yellow">
           <img src="./assets/marketing-campaign.png" alt="" class="services-illustration" width="512" height="512">
@@ -86,38 +74,28 @@
         <div class="card-description">{{englishTextService.servicesText.marketingCampaignsDescription}}</div>
       </div>
     </div>
-
     <img src="./assets/dotted-circle.png" alt="" class="dotted-circle" width="478" height="498"/>
-
   </div>
 
 
-<!-- Why is Divox -->
-
-
+  <!-- Why is Divox -->
   <div class="why-divox-container" id="whyDivox">
-
     <div class="why-image-container">
       <img src="./assets/why-divox.png" alt="" class="why-divox-img" width="875" height="1008"/>
     </div>
-
     <div class="why-divox-text">
       <h1 class="why-divox-head-txt">Why is <mark class="light-weight">Divox</mark>?</h1>
       <p class="why-divox-description">{{englishTextService.whyDivox}}</p>
       <p></p>
     </div>
-
   </div>
 
 
-<!-- Our team  -->
-
-
+  <!-- Our team  -->
   <div class="team-container" id="ourTeam">
     <div class="services-text">
       <h1 class="services-main-txt">{{englishTextService.ourTeam.ourTeamText}}</h1>
     </div>
-
     <div class="card-row">
       <div class="card team-card">
         <div class="illustration-container orange">
@@ -126,7 +104,6 @@
         <div class="card-title">{{englishTextService.ourTeam.productDesignerText}}</div>
         <div class="card-description">{{englishTextService.ourTeam.productDesignerDescription}}</div>
       </div>
-
       <div class="card team-card">
         <div class="illustration-container yellow">
           <img src="./assets/project-manager.png" alt="" class="services-illustration" width="512" height="512">
@@ -134,7 +111,6 @@
         <div class="card-title">{{englishTextService.ourTeam.projectManagerText}}</div>
         <div class="card-description">{{englishTextService.ourTeam.projectManagerDescription}}</div>
       </div>
-
       <div class="card team-card">
         <div class="illustration-container baby-blue">
           <img src="./assets/front-end.png" alt="" class="services-illustration" width="512" height="512">
@@ -149,7 +125,6 @@
         <div class="card-title">{{englishTextService.ourTeam.graphicDesignerText}}</div>
         <div class="card-description">{{englishTextService.ourTeam.graphicDesignerDescription}}</div>
       </div>
-
       <div class="card team-card">
         <div class="illustration-container orange">
           <img src="./assets/backend-developer.png" alt="" class="services-illustration" width="512" height="512">
@@ -157,7 +132,6 @@
         <div class="card-title">{{englishTextService.ourTeam.backendText}}</div>
         <div class="card-description">{{englishTextService.ourTeam.backendDescription}}</div>
       </div>
-
       <div class="card team-card">
         <div class="illustration-container orange">
           <img src="./assets/content-creator.png" alt="" class="services-illustration" width="512" height="512">
@@ -165,41 +139,33 @@
         <div class="card-title">{{englishTextService.ourTeam.contentCreatorText}}</div>
         <div class="card-description">{{englishTextService.ourTeam.contentCreatorDescription}}</div>
       </div>
-
     </div>
-
     <img src="./assets/dotted-circle.png" alt="" class="dotted-circle" width="478" height="498"/>
   </div>
 
-<!-- About us-->
-
-<div class="why-divox-container about-us-container" id="aboutUs">
-
-  <div class="about-us-text-container">
-    <h1 class="why-divox-head-txt about-us-text">About Us</h1>
-    <h1 class="about-us-subtext">Fake or  <mark class="light-weight">Real</mark>!</h1>
+  <!-- About us-->
+  <div class="why-divox-container about-us-container" id="aboutUs">
+    <div class="about-us-text-container">
+      <h1 class="why-divox-head-txt about-us-text">About Us</h1>
+      <h1 class="about-us-subtext">Fake or  <mark class="light-weight">Real</mark>!</h1>
+    </div>
+    <div class="about-us-card-container">
+      <div class="about-us-card">
+        <h4 class="card-head">About Divox</h4>
+        <p class="why-divox-description about-us-description">{{englishTextService.aboutUsText.aboutDivoxText}}</p>
+      </div>
+      <div class="about-us-card">
+        <h4 class="card-head">Our Approach</h4>
+        <p class="why-divox-description about-us-description">{{englishTextService.aboutUsText.ourApproachText}}</p>
+      </div>
+      <div class="about-us-card">
+        <h4 class="card-head">Collaboration And Results</h4>
+        <p class="why-divox-description about-us-description">{{englishTextService.aboutUsText.collaborationAndResultsText}}</p>
+      </div>
+    </div>
   </div>
 
-<div class="about-us-card-container">
-  <div class="about-us-card">
-    <h4 class="card-head">About Divox</h4>
-    <p class="why-divox-description about-us-description">{{englishTextService.aboutUsText.aboutDivoxText}}</p>
-  </div>
-  <div class="about-us-card">
-    <h4 class="card-head">Our Approach</h4>
-    <p class="why-divox-description about-us-description">{{englishTextService.aboutUsText.ourApproachText}}</p>
-  </div>
-  <div class="about-us-card">
-    <h4 class="card-head">Collaboration And Results</h4>
-    <p class="why-divox-description about-us-description">{{englishTextService.aboutUsText.collaborationAndResultsText}}</p>
-  </div>
-</div>
-
-</div>
-
-
-
-<!--  Contact Us  -->
+  <!--  Contact Us  -->
 
   <div class="contact-us-container" id="contact-us">
     <img src="/assets/contact-us.jpg" class="contact-us-img" alt=""/>
