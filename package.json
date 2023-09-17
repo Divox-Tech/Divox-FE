@@ -11,7 +11,7 @@
   "private": true,
   "dependencies": {
     "@angular/animations": "^16.1.8",
-    "@angular/common": "^16.1.8",
+    "@angular/common": "^16.1.8"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^16.1.8",
