@@ -6,6 +6,10 @@ import {BrowserModule} from "@angular/platform-browser";
 import {RouterOutlet} from "@angular/router";
 import {ContactUsButtonComponent} from "../../core/conatct-us-button/contact-us-button.component";
 import {HttpClient, HttpClientModule} from "@angular/common/http";
+import { NzFormModule } from 'ng-zorro-antd/form';
+import { NzInputModule } from 'ng-zorro-antd/input';
+import {NzButtonModule} from "ng-zorro-antd/button";
+import { NzMessageModule } from 'ng-zorro-antd/message';
 
 @NgModule({
   declarations: [
@@ -17,7 +21,11 @@ import {HttpClient, HttpClientModule} from "@angular/common/http";
     ReactiveFormsModule,
     RouterOutlet,
     CoreModule,
-    HttpClientModule
+    HttpClientModule,
+    NzFormModule,
+    NzInputModule,
+    NzButtonModule,
+    NzMessageModule
   ],
   providers: [HttpClient],
   bootstrap: [],
