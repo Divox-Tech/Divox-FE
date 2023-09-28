@@ -47,19 +47,26 @@ export class HomePageComponent implements OnInit{
   });
 
   submitForm(): void {
+
     if (this.validateForm.valid) {
-      const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
-      this.http.post('https://formspree.io/f/mleylljn',
-        {
-          name: this.validateForm?.controls?.fullName?.value,
-          replyto: this.validateForm?.controls?.email?.value,
-          message: this.validateForm?.controls?.message?.value,
-          phoneNumber: this.validateForm?.controls?.phoneNumber?.value
-        },
-        { 'headers': headers }).subscribe(
+      const headers = new HttpHeaders({
+        'Content-Type': 'application/json'
+      });
+
+      const formData = {
+        name: this.validateForm?.controls?.fullName?.value,
+        replyto: this.validateForm?.controls?.email?.value,
+        message: this.validateForm?.controls?.message?.value,
+        phoneNumber: this.validateForm?.controls?.phoneNumber?.value
+      };
+
+      this.http.post('https://formspree.io/f/mleylljn', formData, { headers }).subscribe(
         response => {
           this.resetForm();
           this.message.create("success", `Your message was sent successfully!`);
+        },
+        (error) => {
+          this.message.create("error", `An error occurred while sending your message. Please try again later.`);
         }
       );
     } else {
